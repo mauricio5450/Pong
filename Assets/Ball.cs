@@ -38,6 +38,9 @@ public class Ball : MonoBehaviour
             Time.timeScale = 0;
             enabled = false;
         }
+         if (Input.GetKey("escape")){
+             Application.Quit();
+         }
     }
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag=="Paddle"){

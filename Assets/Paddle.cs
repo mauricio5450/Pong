@@ -48,5 +48,8 @@ public class Paddle : MonoBehaviour
             move = 0;
         }
         transform.Translate(move*Vector2.up);
+        if (Input.GetKey("escape")){
+            Application.Quit();
+        }
     }
 }
