@@ -29,12 +29,12 @@ public class Ball : MonoBehaviour
         }
 
         if(transform.position.x < GameManager.bottomLeft.x + radius && direction.x < 0){
-            Debug.Log("Right player wins!!");
+            Debug.Log("Left player wins!!");
             Time.timeScale = 0;
             enabled = false;
         }
         if(transform.position.x > GameManager.topRight.x - radius && direction.x > 0){
-            Debug.Log("Left player wins!!");
+            Debug.Log("Right player wins!!");
             Time.timeScale = 0;
             enabled = false;
         }
